@@ -1,0 +1,9 @@
+{
+    "smtp_credentials": {
+        "host": "HOST",
+        "port": 587,
+        "secure": false,
+        "username": "USERNAME",
+        "password": "PASSWORD"
+    }
+}

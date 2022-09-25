@@ -1,0 +1,14 @@
+{
+  "name": "mail_bot",
+  "version": "0.1",
+  "description": "Mailing Bot",
+  "main": "index.js",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Dennis Ickes",
+  "dependencies": {
+    "nodemailer": "^6.7.8"
+  }
+}

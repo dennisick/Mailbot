@@ -1,9 +1,16 @@
 {
-    "smtp_credentials": {
-        "host": "HOST",
+    "smtpCredentials": {
+        "host": "SMTP_HOST",
         "port": 587,
         "secure": false,
-        "username": "USERNAME",
-        "password": "PASSWORD"
+        "username": "SMTP_USERNAME",
+        "password": "SMTP_PASSWORD"
+    },
+    "emailFrom": "SENDER_NAME",
+    "dkim": {
+        "active": false,
+        "domain":  "DKIM_DOMAIN",
+        "selector": "DKIM_SELECTOR",
+        "keyName": "DKIM_KEY_NAME"
     }
 }

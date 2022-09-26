@@ -4,7 +4,7 @@ Mailbot is a leight and easy to use mailing bot built with NodeJS and nodemailer
 
 # Usage
 
-    yarn start --template <NAME> --list <NAME>
+    yarn start --template <NAME> --list <NAME> --subject <SUBJECT>
 
 ## Templates
 
@@ -26,7 +26,7 @@ In the configuration file ./config.json you can save the SMTP settings, of the e
 
     {
 
-		"smtp_credentials": {
+		"smtpCredentials": {
 
 			"host": "HOST",
 
@@ -38,6 +38,24 @@ In the configuration file ./config.json you can save the SMTP settings, of the e
 
 			"password": "PASSWORD"
 
+		},
+		"emailFrom": "SENDER_NAME",
+		"dkim": {
+			"active": false,
+			"domain": "DKIM_DOMAIN",
+			"selector": "DKIM_SELECTOR",
+			"keyName: "DKIM_KEY_NAME
 		}
 
 	}
+
+# DKIM Authentication
+
+Mail Bot automatically searches the ./keys folder for keys that have the .key file extension.
+
+    Example: ./keys/mail.key
+    Name: mail
+
+Make sure to edit the ./config.json file with the DKIM settings and save the public key as a TXT Record in your domain.
+
+
